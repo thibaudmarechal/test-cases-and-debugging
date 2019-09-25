@@ -1,9 +1,9 @@
 let verifyEquals = require('./verify-equals.js');
 
 // we need 5 test cases.
-let inputs = [];
+let inputs = ["hello world", "ALL YOUR BASE ARE BELONG"];
 
-let outputs = [];
+let outputs = ["Hello World", "All your Base Are Belong"];
 
 /*
 Make this function return the input string, capitalized. You must use a for loop. For example:

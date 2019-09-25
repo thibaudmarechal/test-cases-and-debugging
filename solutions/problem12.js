@@ -15,6 +15,14 @@ function getUniqueElements(arr1, arr2) {
   return uniqueElements;
 }
 
+// try to do it with arr2.every()
+function getUniquementElements (arr1, arr2) {
+  return arr1.filter((num1) => {
+    return arr2.every((num2) => { return num1 !== num2});
+  });
+}
+// End this here
+
 function f(input) {
   const arr1 = input[0];
   const arr2 = input[1];

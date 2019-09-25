@@ -22,7 +22,9 @@ HINTS:
     - Once to get the unique elements in the first array
     - A second time to get the unique elements in the second array
 */
-function f(input) {}
+function f(input) {
+  
+}
 
 //This function runs a test. You do not need to change any code under here
 function runTest(i) {

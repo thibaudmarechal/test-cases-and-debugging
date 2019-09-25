@@ -1,9 +1,17 @@
 let verifyEquals = require('./verify-equals.js');
 
 // we need 7 test cases.
-let inputs = [];
-
-let outputs = [];
+let inputs = [
+  ["foo", 3],
+  [],
+  ["fo", 3]
+];
+    
+let outputs = [
+  "foofoofoo",
+  undefined,
+  "fofofo"
+];
 
 /*
 The function input is an array. The first element of the array is a string. The second is a number.
@@ -16,7 +24,14 @@ f(["foo", 3]) // "foofoofoo"
 f(["fo", 3]) // "fofofo"
 f(["foo", -1]) // ""
 */
-function f(arr) {}
+function f(arr) {
+  let str = arr[0];
+  let count = arr[1];
+  if(typeof str !== 'string'|| typeof count !== 'number') return undefined;
+  if (count <=0) return '';
+  let ret = 0;
+  for(i=0, )
+}
 
 //This function runs a test. You do not need to change any code under here
 function runTest(i) {
